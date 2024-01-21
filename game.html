@@ -1,0 +1,32 @@
+<!-- game.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Guess the Number</h1>
+        <input id="guessnum" placeholder="Enter your guess">
+        <button onclick="check()">Check</button>
+
+        <p id="result">Take a guess...</p>
+        <p id="score">Attempts left: <span id="attempts">3</span></p>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-content" id="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p id="popup-message"></p>
+            <p id="popup-score"></p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
